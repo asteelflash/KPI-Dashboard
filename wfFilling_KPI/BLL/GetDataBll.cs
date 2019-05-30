@@ -23,7 +23,7 @@ namespace wfFilling_KPI.BLL
             Configuration.SwitchTabInterval = int.Parse(System.Configuration.ConfigurationManager.AppSettings["switchTabInterval"].ToString());
             Configuration.RefreshDataInterval = int.Parse(System.Configuration.ConfigurationManager.AppSettings["refreshDataInterval"].ToString());
             Configuration.ifAutoRefresh = System.Configuration.ConfigurationManager.AppSettings["autoRefresh"].ToString();
-            string connStr = System.Configuration.ConfigurationManager.AppSettings["connectionstring"].ToString();
+            string connStr = System.Configuration.ConfigurationManager.AppSettings["connectionstringReport"].ToString();
             DBHelper.ConnString = Encrypt.DesDecrypt(connStr);
         }
         public void setTimeZones()

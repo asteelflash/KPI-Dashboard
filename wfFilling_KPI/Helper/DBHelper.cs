@@ -24,8 +24,8 @@ namespace wfFilling_KPI.Helper
             {
                 if (String.IsNullOrEmpty(connStr))
                 {
-                    connStr = System.Configuration.ConfigurationManager.AppSettings["connectionstring"].ToString();
-                    connStr = Encrypt.DesDecrypt(connStr);
+                    connStr = System.Configuration.ConfigurationManager.AppSettings["connectionstringReport"].ToString();
+                    connStr = Encrypt.DesDecrypt(connStr);                   
                 }
                 return connStr == null ? "" : connStr;
             }
